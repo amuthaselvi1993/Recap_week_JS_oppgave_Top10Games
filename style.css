@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Start from the top */
+  width: 100%; /* Full width for centering content */
+}
+
+h1 {
+  color: white;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  text-align: center;
+}
+body {
+  background-image: url("assets/simple5.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* font-size: 16px; */
+  font-size: 10px;
+  padding: 50px;
+  height: 100vh;
+}
+
+.product {
+  margin-right: 20px;
+  background-color: rgb(88, 141, 184);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+.text-box {
+  padding: 15px;
+  line-height: 1.4;
+  /* gap: 10px; */
+  gap: 5px;
+}
+
+.text-box > * {
+  gap: 5px;
+  display: flex;
+}
+.game-image {
+  /* padding: 10px; */
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+.game-image:hover {
+  /* width: 50px; */
+  /* scale: 120%; */
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 540px) {
+  .games-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* .product {
+  width: 300px;
+  height: auto;
+} */
+
+.games-products {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
